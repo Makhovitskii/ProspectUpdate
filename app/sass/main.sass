@@ -31,7 +31,8 @@
 	width: 0px 
 	height: 0px
 
-
+button:hover
+	cursor: pointer 
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -50,9 +51,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-button:hover
-	cursor: pointer
-	border: none
+*
+	color: #5e5e5e
 
 a:hover
 	text-decoration: none
@@ -67,6 +67,8 @@ a:active
 .text-center
 	text-align: center
 
+
+// HEADER
 .head_line
 	width: 100%
 	height: 80px
@@ -86,14 +88,10 @@ a:active
 			font-weight: 500
 			display: block
 			color: #fff
-
-			
 		span:last-child
 			font-size: 14px
 			font-weight: 400
 			opacity: 0.7		
-
-		
 
 .user-block
 	float: right
@@ -106,27 +104,33 @@ a:active
 		list-style: none
 		li
 			float: left
-			padding: 28px 12px
+			padding: 28px 10px
 		.mail-box
-			
 			float: left
-			display: inline
-			
 		.user_logo
 			.logo_user
 				width: 48px
 				height: 48px
 				background-color: #FFF
-				border-radius: 50%		
-
-
+				border-radius: 50%
+				position: relative
+				bottom: 15px
+				right: 15px		
 		.buttones
 			background: 0
 			border: none
+			span
+				color: #fff
+				font-weight: bold
+				position: relative
+				bottom: 3px
+			.fa
+				opacity: 0.5
+			.fa:hover
+				opacity: 1
+// HEADER END
 
-
-
-
+// LEFT MENU
 
 .left-panel
 	height: 100%
@@ -134,15 +138,139 @@ a:active
 	background-color: #373737
 	overflow-y: scroll
 	overflow-x: hidden
-.main
-	background-color: #373737
+	width: 96px
+	.left_menu
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+
+			a
+				position: relative
+				display: block
+				padding: 16px
+				text-align: center
+				text-decoration: none
+
+
+			img
+				display: block
+				margin: 0 auto 8px
+			span
+				color: #fff
+				font-size: 11px
+				font-weight: 400
+				text-align: center
+				display: block
+			a:hover
+				background-color: #17191a
+				transition: 0.5s ease
+				::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					bottom: 0
+					right: 0
+					width: 4px
+					height: auto
+					background-color: #55ab80
+					transition: 0.5s ease
+
+	.active
+		position: relative
+		display: block
+		padding: 16px
+		text-align: center
+		text-decoration: none
+		background-color: #17191a
+		::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			width: 4px
+			height: auto
+			background-color: #55ab80
 	
+// LEFT MENU END
 
-.main-2
-	background-color: #f6f6f6
+// SETTINGS PANEL
+	
+.main_2
+	background-color: #fff
 	margin-left: 96px	
+	width: 296px
+	.sidebar_top
+		width: 100%
+		height: auto
+		background-color: #e9e9e9
+		border-bottom: 2px solid #fff
+		padding: 30px 18px 30px 30px
+		span
+			font-size: 22px
+			font-weight: 700
+			color: #5e5e5e
+		a
+			.fa
+				color: #5e5e5e
+				font-size: 28px
+				margin-left: 15px
+				opacity: 0.5
 
-.main-3
+.sidebar_search
+	padding: 24px 30px 30px 30px
+	border-bottom: 2px solid #fff
+	background-color: #e9e9e9
+	label
+		display: inline-block
+		max-width: 100%
+		margin-bottom: 5px
+		font-weight: 700
+	.icon-input
+		position: relative
+		padding: 0
+		width: 100%
+		.searching
+			display: block
+			width: 100%
+			height: 34px
+			padding: 6px 12px
+			font-size: 13px
+			line-height: 1.4
+			color: #555
+			background-color: #FFF
+			background-image: none
+			border-radius: 4px
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+			border: none
+		span
+			position: absolute
+			right: 0
+			height: 100%
+			display: inline-block
+			text-align: center
+			top: 4px
+			width: 36px
+			opacity: 0.5
+
+.sidebar_calendar
+	width: 100%
+	height: auto
+	background-color: #e9e9e9
+	margin-bottom: 3px
+	padding: 15px
+
+
+
+
+
+
+
+
+.main_3
 	margin-left: 392px
 	height: auto
 

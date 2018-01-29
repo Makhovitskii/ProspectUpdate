@@ -30,41 +30,36 @@
 </head>
 
 <body>
-	<!-- HEAD -->
+<!-- HEADER -->
 	<div class="container-fluid">
 		<div class="row">
 
 			<div class="head_line">
-
+<!-- LOGO AND DATE -->
 				<div class="logo-bg">
 					<a href="#"><img src="img/prospect/bitmap.png" alt="logo" class="logo"></a>
 				</div>
 				
-
 				<div class="date_today">
-
 					<span>Bugün, 15 Sentyabr 2017</span>
 					<span>Çərşənbə</span>
-
 				</div>
+<!-- LOGO AND DATE END -->
 
+<!-- USER BLOCK MENU -->
 				<div class="user-block">
 					<ul class="user-block-panel">
-						<li class="mail-box">
 
+						<li class="mail-box">
 							<button class="buttones"  type="button">
 								<i class="fa fa-envelope-o"></i>
 							</button>
-							
-
 						</li>
 
 						<li class="notification">
-
-							<div class="button_x"  >
+							<button class="buttones"  type="button">
 								<i class="fa fa-bell-o"></i>
-							</div>
-
+							</button>
 						</li>
 
 						<li class="user_name">
@@ -72,41 +67,88 @@
 								<span>Gilan Holding</span>
 								<i class="fa fa-angle-down"></i>
 							</button>
-
 						</li>
 
 						<li class="user_logo">
-							
-							<div class="logo_user"></div>
-
+							<button class="buttones">
+								<div class="logo_user"></div>
+							</button>
 						</li>
+
 					</ul>
 
 				</div>
-					
-
-
-				
-
+<!-- USER BLOCK MENU END-->
 			</div>
 		</div>
 	</div>
+
+<!-- HEADER END-->
 	<div class="w3-row ">
 
-		<div class="w3-col main left-panel" style="width:96px">
+
+<!-- LEFT MENU -->
+		<div class="w3-col left-panel">
+			<ul class="left_menu">
+				<li>
+					<a href="#" class="active">
+						<img src="img/prospect/davamiyyet.svg">
+						<span>Davamiyyat</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="img/prospect/emek-haqqi.svg">
+						<span>Əməkhaqqı jurnalı</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="img/prospect/hesabatlar.svg">
+						<span>Hesabatlar</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="img/prospect/lorem-ipsum.svg">
+						<span>Lorem ipsum</span>
+					</a>
+				</li>		
+
+			</ul>	
+		</div>
+<!-- LEFT MENU END-->
+
+<!--SETTINGS PANEL-->
+		<div class="w3-col main_2 left-panel">
+			<div class="sidebar_top">
+				<span>Davamiyyət jurnalı</span>
+				<a href="#"><i class="fa fa-cog"></i></a>
+			</div>
+
+			<div class="sidebar_search">
+				<label for="search">Axtarış</label>
+				<div class="icon-input">
+					<input type="text" class="searching" id="search" placeholder="Əməkdaşın adı / soyadı" >
+					<span><i class="fa fa-search"></i></span>
+				</div>
+			</div>
 			
-			<div class="main-menu-buttons">
-				
-				
-				
+			<div class="sidebar_calendar">
+				<div class="calendar">
+				<div id="my-calendar" class="dycalendar-container dycalendar-month-prev-next-button dycalendar-month-container"></div>
+			</div>
 			</div>
 
 		</div>
-		<div class="w3-col main-2 left-panel" style="width: 296px">
-			
-		</div>
 
-		<div class="w3-rest main-3">
+<!--SETTINGS PANEL END-->
+
+<!-- CONTENT  -->
+		<div class="w3-rest main_3">
 			<div class="container-fluid">
 				<div class="row">
 					
@@ -150,12 +192,11 @@
 
 				
 					
-				</div>
-	
 			</div>
+	
 		</div>
-		
 	</div>
+		
 
 	
 	
